@@ -21,7 +21,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kb4-GM-49S">
-                                <rect key="frame" x="112" y="192" width="90" height="30"/>
+                                <rect key="frame" x="112" y="94" width="90" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -33,10 +33,35 @@
                                     <action selector="startGame" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Oj-XN-Nf6"/>
                                 </connections>
                             </button>
+                            <pickerView tag="1" contentMode="scaleToFill" id="hdE-7R-BXe">
+                                <rect key="frame" x="1" y="391" width="320" height="177"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="AlF-ya-M21"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="XId-ou-HYK"/>
+                                </connections>
+                            </pickerView>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" id="Uwm-ax-tR7">
+                                <rect key="frame" x="-3" y="139" width="320" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <date key="date" timeIntervalSinceReferenceDate="467445763.90537697">
+                                    <!--2015-10-25 06:02:43 +0000-->
+                                </date>
+                            </datePicker>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem width="256" style="plain" systemItem="fixedSpace" id="4tI-9h-om9"/>
+                        <barButtonItem title="完成" id="Uqg-7I-SsG"/>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="myPickerView" destination="hdE-7R-BXe" id="LFa-1D-lLP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

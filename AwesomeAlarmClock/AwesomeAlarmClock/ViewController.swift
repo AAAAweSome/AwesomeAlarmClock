@@ -8,6 +8,26 @@
 
 import UIKit
 
+class MyClass {
+    var __name: String  = ""
+    var age: Int = 0
+    
+    init(name : String , age : Int){
+        self.__name = name
+        self.age = age
+    }
+    
+    var totalName : String {
+        get {
+            return __name + String(age)
+        }
+        
+        set {
+            totalName = newValue
+        }
+    }
+    
+}
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -43,7 +63,6 @@ class ViewController: UIViewController {
             allInfo += xx
         }
         
-        myalert.title = "准备好了吗\(total)\(allInfo)"
         myalert.message = "准备好开始了吗？"
         myalert.addButtonWithTitle("Ready, go!")
         myalert.show()
