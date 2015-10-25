@@ -489,6 +489,7 @@
 				7C928DC61BDBAF4600B1A0FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7C928DC71BDBAF4600B1A0FB /* Build configuration list for PBXNativeTarget "AwesomeAlarmClockTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +498,7 @@
 				7C928DC91BDBAF4600B1A0FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7C928DCA1BDBAF4600B1A0FB /* Build configuration list for PBXNativeTarget "AwesomeAlarmClockUITests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +507,7 @@
 				7C928DCC1BDBAF4600B1A0FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
